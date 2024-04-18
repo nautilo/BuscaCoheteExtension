@@ -1,0 +1,12 @@
+__pycache__
+.idea
+.mypy_cache
+venv/
+*.zip
+build/
+data/
+tmp/
+scripts/
+weights/
+dist/
+opennsfw2.egg-info/
