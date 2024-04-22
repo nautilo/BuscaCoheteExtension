@@ -1,0 +1,60 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+
+h1 {
+  text-align: center;
+  color: #fff;
+  background-image: url('images/rocket.png'); /* Agrega la ruta de tu imagen */
+  background-size: contain; /* Para que la imagen de fondo cubra todo el espacio del título */
+  background-position: center; /* Centra la imagen de fondo */
+  padding: 20px; /* Ajusta el espaciado para que el texto no se superponga con la imagen */
+  font-weight: bold;
+}
+#loginForm {
+  width: 250px;
+  height: 200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+  display: block;
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result {
+  text-align: center;
+  margin-top: 20px;
+}

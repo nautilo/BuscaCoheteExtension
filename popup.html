@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detector de Contenido Inapropiado</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-  </style>
+  <title>BuscaCohete</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Detector de Contenido Inapropiado</h1>
-  <input type="file" id="fileInput" accept="image/*,video/*">
+  <div id="loginForm">
+    <h1>Iniciar sesión</h1>
+    <form id="login">
+      <input type="text" id="username" placeholder="Usuario">
+      <input type="password" id="password" placeholder="Contraseña">
+      <input type="submit" value="Iniciar sesión">
+    </form>
+  </div>
+  
   <div id="result"></div>
   <script src="popup.js"></script>
-
 </body>
 </html>

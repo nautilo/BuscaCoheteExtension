@@ -101,3 +101,32 @@ fetch('http://127.0.0.1:8000/api/sitiosbloqueados/')
     );
   })
   .catch(error => console.error('Error al obtener los sitios bloqueados:', error));
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Evitar el envío del formulario por defecto
+      
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+  
+      fetch('http://localhost:3000/login', { // Cambia a tu URL del backend si es diferente
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ username, password })
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success) {
+          // Abre el panel de usuario en una nueva ventana
+          window.open('panel.html', '_blank'); // Cambia 'panel.html' por la ruta a tu panel de usuario
+        } else {
+          document.getElementById('result').innerText = data.message;
+        }
+      })
+      .catch(error => console.error('Error:', error));
+    });
+  });
