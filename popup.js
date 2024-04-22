@@ -1,5 +1,5 @@
 // Realizar una solicitud GET a la API para obtener los sitios bloqueados
-fetch('http://127.0.0.1:8000/api/sitiosbloqueados/')
+fetch('http://buscacohete.pythonanywhere.com/api/sitiosbloqueados/')
   .then(response => response.json())
   .then(data => {
     const sitiosBloqueados = data.map(sitio => sitio.url);
